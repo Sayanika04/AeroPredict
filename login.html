@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="title">✈ Aeropredict</div>
+    <nav class="menu">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="login.html">Login</a>
+     <a href="#" id="flightDetailsLink">Flight Details</a>  
+      <a href="prediction_result.html">Prediction</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <div class="main">
+    <div class="centered">
+      <div class="card">
+        <h2 class="text-center">Admin Login</h2>
+        <p class="small-text text-center">
+          Demo credentials: <strong>Username:</strong> admin, <strong>Password:</strong> 1234, <strong>OTP:</strong> 123456
+        </p>
+        <div id="login-step1">
+          <h3>Step 1: Enter Credentials</h3>
+          <form id="loginForm">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="example@airline.com" required>
+          <label for="username">Username:</label>
+          <input type="text" id="username" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" required>
+            <button type="submit" class="btn">Next</button>
+          </form>
+          <div id="loginMsg" class="msg"></div>
+        </div>
+        <div id="login-step2" style="display:none;">
+          <h3>Step 2: Enter OTP</h3>
+          <p class="small-text">For demo, we assume OTP is sent to the admin's email/phone. Use <strong>123456</strong> here.</p>
+          <form id="otpForm">
+            <label for="otp">OTP Code:</label>
+            <input type="text" id="otp" required>
+
+            <a href="flight_details.html" class="btn">Verify & Continue</a>
+          </form>
+          <div id="otpMsg" class="msg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin — Enter Flight Details</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header class="topbar">
+    <div class="title">✈ Aeropredict</div>
+    <nav class="menu">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="login.html">Login</a>
+      <a href="#" id="flightDetailsLink">Flight Details</a>
+      <a href="prediction_result.html">Prediction</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <div class="main">
+    <div class="centered">
+
+      <div class="admin-box">
+        <h2 class="text-center">Enter Flight Details</h2>
+
+        <form id="adminFlightForm">
+          <div class="row">
+            <div class="col">
+              <label for="date">Date</label>
+              <input type="date" id="date" required>
+            </div>
+            <div class="col">
+              <label for="day">Day</label>
+              <select id="day" required>
+                <option value="">Select</option>
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
+                <option>Sunday</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label for="airline">Airline</label>
+              <input type="text" id="airline" placeholder="e.g., Air India" required>
+            </div>
+            <div class="col">
+              <label for="origin">Origin</label>
+              <input type="text" id="origin_admin" placeholder="e.g., DEL" required>
+            </div>
+            <div class="col">
+              <label for="destination">Destination</label>
+              <input type="text" id="destination_admin" placeholder="e.g., BOM" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label for="distance">Distance (km)</label>
+              <input type="number" id="distance" placeholder="e.g., 1150" min="0" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label for="sched_dep">Scheduled Departure Time</label>
+              <input type="time" id="sched_dep" required>
+            </div>
+            <div class="col">
+              <label for="actual_dep">Actual Departure Time</label>
+              <input type="time" id="actual_dep" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label for="arr_delay">Arrival Delay (min)</label>
+              <input type="number" id="arr_delay" min="0" placeholder="e.g., 25" required>
+            </div>
+            <div class="col">
+              <label for="weather_delay">Weather Delay (min)</label>
+              <input type="number" id="weather_delay" min="0" placeholder="e.g., 10" required>
+            </div>
+            <div class="col">
+              <label for="nas_delay">NAS Delay (min)</label>
+              <input type="number" id="nas_delay" min="0" placeholder="e.g., 0" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label for="security_delay">Security Delay (min)</label>
+              <input type="number" id="security_delay" min="0" placeholder="e.g., 0" required>
+            </div>
+            <div class="col">
+              <label for="late_aircraft_delay">Late Aircraft Delay (min)</label>
+              <input type="number" id="late_aircraft_delay" min="0" placeholder="e.g., 15" required>
+            </div>
+          </div>
+
+
+          <div class="action-row">
+            <button type="submit" class="btn submit-admin">Save & Predict</button>
+            <a href="prediction_result.html" class="btn btn-secondary" id="viewLatest">View Latest Entry</a>
+          </div>
+        </form>
+
+        <div id="adminMsg" class="msg"></div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

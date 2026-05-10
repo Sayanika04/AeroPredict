@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="title">✈ Aeropredict</div>
+    <nav class="menu">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="login.html">Login</a>
+      <a href="#" id="flightDetailsLink">Flight Details</a>
+      <a href="prediction_result.html">Prediction</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <div class="main">
+    <div class="centered">
+
+      <div class="dashboard-box" id="quickcheck">
+
+        <h2 class="text-center">Search Flights Here</h2>
+
+       <form id="flightSearchForm">
+        <label>Origin</label>
+        <input type="text" id="origin" placeholder="e.g. DEL" required>
+
+        <label>Destination</label>
+        <input type="text" id="destination" placeholder="e.g. BOM" required>
+
+        <button type="submit" class="btn small-btn"><a href="flight_results.html"> Search Flights</button></a>
+      </form>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
+

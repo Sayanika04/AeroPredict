@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Prediction Result</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="title">✈ Aeropredict</div>
+    <nav class="menu">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="login.html">Login</a>
+      <a href="#" id="flightDetailsLink">Flight Details</a>
+      <a href="prediction_result.html">Prediction</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <div class="main">
+    <div class="centered">
+      <div class="uniform-box" id="resultBox">
+        <h2 class="text-center">Prediction Result</h2>
+
+
+        <div id="entryDetails"></div>
+        <h3>Flight Details</h3>
+        <ul>
+          <li><strong>Origin:</strong> ---</li>
+          <li><strong>Destination:</strong> ---</li>
+          <li><strong>Airline:</strong> ------</li>
+          <li><strong>Departure Time:</strong> ..:..</li>
+        </ul>
+
+        <h3>Predicted Status</h3>
+        <p><strong>Result:</strong> Likely Delayed/Not Delayed</p>
+        <p><strong>Estimated Delay:</strong> ..... minutes</p>
+        <p><strong>Confidence (demo):</strong> .....</p>
+
+        <p class="small-text">
+          (This is a static example for demo. In the final system, values will come from the trained ML models through Flask.)
+        </p>
+
+        <div id="modelResult" style="margin-top:12px;"></div>
+
+        <div style="margin-top:16px;">
+          <a href="admin_flight_entry.html" class="btn">Enter Another</a>
+          <a href="dashboard.html" class="btn btn-secondary">Back to Dashboard</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+

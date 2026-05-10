@@ -1,0 +1,424 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  background-image: url('image2.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-color: rgba(255,255,255,0.3);
+  background-blend-mode: lighten;
+
+  color: #0f172a;
+
+  min-height: 100vh;
+}
+
+html {
+  height: 100%;
+}
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(44, 41, 41);
+  color: #e5e7eb;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+ 
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.menu a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 14px;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  padding-top: 70px; 
+  min-height: 100vh;
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding-top: 90px;
+}
+
+.centered {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.card {
+  width: 350px;       
+  min-height: 500px;  
+  margin: 0 auto;   
+  padding: 25px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(30, 33, 66, 0.15);
+}
+
+
+.dashboard-box {
+  width: 350px;
+  min-height: 450px;
+  padding: 20px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 14px;
+}
+
+input, select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #4b5563;
+  background: #464343;
+  color: #e5e7eb;
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+
+.btn {
+  display: inline-block;
+  background: #53aef9;
+  color: rgb(11, 11, 11);
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  width: 120px;        
+  padding: 8px 10px;   
+  font-size: 14px;     
+  display: block;
+  margin: 0 auto;      
+}
+.small-btn {
+  width: 120px;      
+  padding: 8px 10px;
+  font-size: 14px;   
+  margin: 0 auto;   
+  display: block;
+}
+
+.btn:hover {
+  background:  #2391ff;
+}
+
+
+.feature-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.feature-box {
+  flex: 1 1 250px;
+  background: rgba(86, 86, 236, 0.9);
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.msg {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+
+.small-text {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+
+.admin-box {
+  width: 760px;        
+  min-height: 520px;
+  margin: 30px auto;
+  padding: 22px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+
+.row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 1 220px;
+  min-width: 150px;
+}
+
+.action-row {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+  margin-top: 12px;
+}
+
+
+.submit-admin {
+  width: 160px;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+
+.admin-box input[type="text"],
+.admin-box input[type="number"],
+.admin-box input[type="time"],
+.admin-box input[type="date"],
+.admin-box select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #99c2ff;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: #f9fbff;
+  color: #0f172a;
+}
+
+
+.result-section {
+  margin-top: 20px;
+}
+
+.flight-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.flight-card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.uniform-box {
+  width: 600px;                
+  min-height: 520px;
+  margin: 0 auto;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.uniform-box h2,
+.uniform-box h3 {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.uniform-box ul {
+  margin: 8px 0 12px 18px;
+}
+
+.uniform-box p {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+
+#modelResult {
+  background: #f1f5f9;
+  border-left: 4px solid #53aef9;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+
+.uniform-box .btn {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+/* Flight search result list */
+.flight-results {
+  margin-top: 15px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+/* SEARCH RESULT SECTION */
+
+.flight-search-title {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0f172a;
+  text-align: center;
+}
+
+/* FLIGHT CARD */
+
+.flight-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(4px);
+  background-image: url('../image2.webp');
+  padding: 16px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  transition: 0.3s ease;
+  border-left: 6px solid #53aef9;
+}
+
+.flight-item:hover {
+  transform: translateY(-3px);
+}
+
+/* LEFT */
+
+.flight-left h3 {
+  margin: 0;
+  font-size: 17px;
+  color: #0f172a;
+}
+
+.flight-left span {
+  display: block;
+  margin-top: 4px;
+  font-size: 13px;
+  color: #475569;
+}
+
+/* MIDDLE */
+
+.flight-middle {
+  text-align: center;
+}
+
+.delay-time {
+  font-size: 15px;
+  font-weight: bold;
+  color: #dc2626;
+}
+
+.confidence {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #475569;
+}
+
+/* RIGHT */
+
+.flight-right {
+  text-align: right;
+}
+
+.flight-right span {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #434c58;
+}
+
+/* STATUS */
+
+.status {
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+}
+
+.flight-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8fafc;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-size: 14px;
+}
+
+.flight-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.flight-left span {
+  font-size: 12px;
+  color: #475569;
+}
+
+.flight-right {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.status {
+  font-size: 12px;
+  font-weight: bold;
+  color: #1d4ed8;
+}
+
